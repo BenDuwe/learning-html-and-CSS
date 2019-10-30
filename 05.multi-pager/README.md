@@ -2,7 +2,7 @@
 
 I was responsible for the Home-page
 
-[Multipage project](https://BenDuwe.github.io/learning-html-and-CSS/exercises/05.multi-pager/)
+[Multipage project](https://BenDuwe.github.io/learning-html-and-CSS/05.multi-pager/)
 
 
 |Challenge Parameters  |Challenge Details              |

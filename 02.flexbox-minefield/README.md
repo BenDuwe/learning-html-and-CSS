@@ -3,7 +3,7 @@
 Link to page:
 ------------
 
-https://benduwe.github.io/learning-html-and-css/exercises/02.flexbox-minefield/
+https://benduwe.github.io/learning-html-and-CSS/02.flexbox-minefield/
 
 
 |Challenge Parameters  |Challenge Details              |

@@ -1,9 +1,9 @@
 # Challenge: The basics of Bootstrap
 
-[Exercise 1](https://benduwe.github.io/learning-html-and-css/exercises/06.bootstrap-basics/exercise-1.html)  
-[Exercise 2](https://benduwe.github.io/learning-html-and-css/exercises/06.bootstrap-basics/exercise-2.html)  
-[Exercise 3](https://benduwe.github.io/learning-html-and-css/exercises/06.bootstrap-basics/exercise-3.html)  
-[Carousel](https://benduwe.github.io/learning-html-and-css/exercises/06.bootstrap-basics/carousel.html)  
+[Exercise 1](https://benduwe.github.io/learning-html-and-CSS/06.bootstrap-basics/exercise-1.html)  
+[Exercise 2](https://benduwe.github.io/learning-html-and-CSS/06.bootstrap-basics/exercise-2.html)  
+[Exercise 3](https://benduwe.github.io/learning-html-and-CSS/06.bootstrap-basics/exercise-3.html)  
+[Carousel](https://benduwe.github.io/learning-html-and-CSS/06.bootstrap-basics/carousel.html)  
   
 
 |Challenge Parameters  |Challenge Details              |

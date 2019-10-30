@@ -1,8 +1,8 @@
 # consollidation-challenges
 Challenges to reiterate what we already learned at BeCode
 
-[Pokédex](https://benduwe.github.io/learning-html-and-css/exercises/08.consollidation-challenges/pok%C3%A9dex.html)  
-[Crawl](https://benduwe.github.io/learning-html-and-css/exercises/08.consollidation-challenges/starwars.html)  
+[Pokédex](https://benduwe.github.io/learning-html-and-CSS/08.consollidation-challenges/pok%C3%A9dex.html)  
+[Crawl](https://benduwe.github.io/learning-html-and-CSS/08.consollidation-challenges/starwars.html)  
 // the crawl is based on the article at: http://www.sitepoint.com/css3-starwars-scrolling-text/ \\  
 
 # Challenge: Catch-up week

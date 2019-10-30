@@ -1,7 +1,7 @@
 Link to page:
 -------------
 
-https://benduwe.github.io/learning-html-and-css/exercises/01.markdown-to-html/
+https://benduwe.github.io/learning-html-and-CSS/01.markdown-to-html/
 
 
 # Challenge: Markdown to HTML

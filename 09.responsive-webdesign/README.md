@@ -2,7 +2,7 @@
 Making a responsive webpage base of off a cinema-page
 
 Link to the page:
-https://benduwe.github.io/learning-html-and-css/exercises/09.responsive-webdesign/
+https://benduwe.github.io/learning-html-and-CSS/09.responsive-webdesign/
 
 
 |Challenge Parameters  |Challenge Details              |
