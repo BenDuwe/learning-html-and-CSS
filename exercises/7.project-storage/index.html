@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Bootstrap Example Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://kit.fontawesome.com/27e67ac84a.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+  <!-- PROJECT STORAGE PAGE (4 tabs) START -->
+  <div class="container1">
+
+    <div class="storage1">
+
+      <!-- TABS START-->
+      <ul class="tabs1 nav nav-tabs" id="myTab1" role="tablist">
+        <li class="nav-item">
+          <a class="tablink1 nav-link active" id="search1-tab" data-toggle="tab" href="#search1" role="tab" aria-controls="search1" aria-selected="true">Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="tablink1 nav-link" id="new1-tab" data-toggle="tab" href="#new1" role="tab" aria-controls="new1" aria-selected="false">New</a>
+        </li>
+        <li class="nav-item">
+          <a class="tablink1 nav-link" id="download1-tab" data-toggle="tab" href="#download1" role="tab" aria-controls="download1" aria-selected="false">Download</a>
+        </li>
+        <li class="nav-item">
+          <a class="tablink1 nav-link" id="admin1-tab" data-toggle="tab" href="#admin1" role="tab" aria-controls="admin1" aria-selected="false">Admin</a>
+        </li>
+      </ul>
+      <!-- TABS END -->
+
+      <!-- TABS content START -->
+      <div class="tabcontent1 tab-content" id="myTabContent1">
+
+        <!-- "SEARCH" tab content START (Angel)-->
+        <div class="tab-pane show active" id="search1" role="tabpanel" aria-labelledby="search1-tab">
+
+          <div class="tabc1 tab-pane fade show active  px-5" id="search1" role="tabpanel" aria-labelledby="search1-tab">
+            <div class="input-group row">
+              <div class="input-group-prepend col-12 col-sm-2 p-0">
+                <button class="btn btn-color dropdown-toggle w-100 font-weight-bold noradius" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter</button>
+                <div class="dropdown-menu">
+                  <div class="form-check ml-3">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Name
+                    </label>
+                  </div>
+                  <div class="form-check ml-3">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                    <label class="form-check-label" for="defaultCheck2">
+                      Document
+                    </label>
+                  </div>
+                  <div class="form-check ml-3">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                    <label class="form-check-label" for="defaultCheck3">
+                      Location
+                    </label>
+                  </div>
+                  <div class="form-check ml-3">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                    <label class="form-check-label" for="defaultCheck4">
+                      Age
+                    </label>
+                  </div>
+                  <div class="form-check ml-3">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                    <label class="form-check-label" for="defaultCheck5">
+                      Group
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <input type="text" class="form-control col-12 col-sm-10" id="autocomplete" aria-label="Text input with dropdown button" placeholder="Search...">
+              <div id="autocompleteautocomplete-list" class="autocomplete-items col-12 col-sm-10 offset-0 offset-sm-2">
+                <div class="abc"><strong><img class="border border-secundary rounded" src="avatar.png.png" alt="av"> A</strong>ngel<input type="hidden" value="Angel"></div>
+                <div class="abc"><strong><img class="border border-secundary rounded" src="avatar.png.png" alt="av"> A</strong>ngel Nedelchev<input type="hidden" value="Angel Nedelchev"></div>
+                <div class="abc"><strong><img class="border border-secundary rounded" src="avatar.png.png" alt="av"> A</strong>ngel Nedelchev | Hopper 2.12<input type="hidden" value="Angel Nedelchev, Hopper 2.12"></div>
+                <div class="abc"><strong><img class="border border-secundary rounded" src="avatar.png.png" alt="av"> A</strong>ngel Nedelchev | Hopper 2.12 | Genk<input type="hidden" value="Angel Nedelchev, Hopper 2.12, Genk"></div>
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- "SEARCH" tab content END -->
+
+        <!-- "NEW" tab content START (Jal)-->
+        <div class="tab-pane" role="tabpanel" id="new1" aria-labelledby="new1-tab">
+
+          <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="input-group col-sm-4 mt-5">
+              <div class="customfile1 custom-file">
+                <input type="file" class="btn1 custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                <label class="noradius custom-file-label" for="inputGroupFile01">Choose file</label>
+              </div>
+            </div>
+            <div class="col-sm-4"></div>
+          </div>
+
+          <div class="row mt-2">
+            <div class="col-sm-5"></div>
+            <select class="btn1 custom-select noradius col-sm-2">
+              <option selected>Doc type</option>
+              <option value="1">.doc</option>
+              <option value="2">.pdf</option>
+              <option value="3">.txt</option>
+            </select>
+            <div class="col-sm-5"></div>
+          </div>
+
+          <div class="row mt-2">
+            <div class="col-sm-4"></div>
+            <select class="btn1 custom-select noradius col-sm-4">
+              <option selected>Search name</option>
+              <option value="1">Name 1</option>
+              <option value="2">Name 2</option>
+              <option value="3">Name 3</option>
+            </select>
+            <div class="col-sm-4"></div>
+          </div>
+
+          <div class="upload-btn-primary d-flex justify-content-center mt-3">
+            <button class="btn1 btn btn-color font-weight-bold noradius">Upload</button>
+          </div>
+
+        </div> <!-- "NEW" tab content END-->
+
+        <!-- "DOWNLOAD" tab content START (Ben)-->
+      <div class="tabc3 tab-pane fade " id="download1" role="tabpanel" aria-labelledby="download1-tab">
+            <div id="wrapper-download" class="">
+              <div class="download-pane row pb-2 mt-3 mb-2 mx-2">
+                <div class="col-12 download-box">
+                  <!--FILTER SELECTION-->
+                  <div class="row">
+                    <!-- Sidebar -->
+                    <div class="col-5 col-sm-4 col-md-3 col-xl-2 border-right px-0" id="sidebar-wrapper">
+                      <div class="sidebar-heading border-bottom d-flex justify-content-start">Filter:</div>
+                      <!--Accordion for selection-->
+                      <div class="accordion mb-2 overflow-download download-height" id="accordion-download">
+                        <!--Category Filter card-->
+                        <div class="card card-download mr-5">
+                          <!--header visible after collapsing-->
+                          <div class="d-flex justify-content-start" id="headingOne">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                &#9662; Category
+                              </button>
+                            </h2>
+                          </div>
+                          <!--Collapsing filter list-->
+                          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-download">
+                            <div class="card-body filter-card">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="categoryCheck1">
+                                <label class="form-check-label" for="categoryCheck1">
+                                  Contract
+                                </label>
+                              </div>
+                              <div class="dropdown-divider"></div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="categoryCheck2">
+                                <label class="form-check-label" for="categoryCheck2">
+                                  VDAB
+                                </label>
+                              </div>
+                              <div class="dropdown-divider"></div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="categoryCheck3">
+                                <label class="form-check-label" for="categoryCheck3">
+                                  ...
+                                </label>
+                              </div>
+                              <div class="dropdown-divider"></div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="categoryCheck4">
+                                <label class="form-check-label" for="categoryCheck4">
+                                  ...
+                                </label>
+                              </div>
+                              <div class="dropdown-divider"></div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="categoryCheck5">
+                                <label class="form-check-label" for="categoryCheck5">
+                                  ...
+                                </label>
+                              </div>
+                              <div class="dropdown-divider"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--Location Filter card-->
+                        <div class="card card-download mr-5">
+                          <!--header visible after collapsing-->
+                          <div class="d-flex justify-content-start" id="headingTwo">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                &#9662; Location
+                              </button>
+                            </h2>
+                          </div>
+                          <!--Collapsing filter list-->
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-download">
+                            <div class="card-body filter-card">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="locationCheck1">
+                                <label class="form-check-label" for="locationCheck1">
+                                  Brussel
+                                </label>
+                              </div>
+                              <div class="dropdown-divider"></div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="locationCheck2">
+                                <label class="form-check-label" for="locationCheck2">
+                                  Charleroi
+                                </label>
+                              </div>
+                              <div class="dropdown-divider"></div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="locationCheck3">
+                                <label class="form-check-label" for="locationCheck3">
+                                  Genk
+                                </label>
+                              </div>
+                              <div class="dropdown-divider"></div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="locationCheck4">
+                                <label class="form-check-label" for="locationCheck4">
+                                  Gent
+                                </label>
+                              </div>
+                              <div class="dropdown-divider"></div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="locationCheck5">
+                                <label class="form-check-label" for="locationCheck5">
+                                  ...
+                                </label>
+                              </div>
+                              <div class="dropdown-divider"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--Group Filter-->
+                        <div class="card card-download mr-5">
+                          <!--header visible after collapsing-->
+                          <div class="d-flex justify-content-start" id="headingThree">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                &#9662; Group
+                              </button>
+                            </h2>
+                          </div>
+                          <!--Collapsing filter list-->
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-download">
+                            <div class="card-body filter-card">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="groupCheck1">
+                                <label class="form-check-label" for="groupCheck1">
+                                  Lovelace-1.2
+                                </label>
+                              </div>
+                              <div class="dropdown-divider"></div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="groupCheck2">
+                                <label class="form-check-label" for="groupCheck2">
+                                  Turing-1.4
+                                </label>
+                              </div>
+                              <div class="dropdown-divider"></div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="groupCheck3">
+                                <label class="form-check-label" for="groupCheck3">
+                                  Hopper-2.12
+                                </label>
+                              </div>
+                              <div class="dropdown-divider"></div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="groupCheck4">
+                                <label class="form-check-label" for="groupCheck4">
+                                  Yu-1.10
+                                </label>
+                              </div>
+                              <div class="dropdown-divider"></div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="groupCheck5">
+                                <label class="form-check-label" for="groupCheck5">
+                                  ...
+                                </label>
+                              </div>
+                              <div class="dropdown-divider"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--Person Filter-->
+                        <div class="card card-download mr-5">
+                          <!--header visible after collapsing-->
+                          <div class="d-flex justify-content-start" id="headingFour">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                &#9662; Person
+                              </button>
+                            </h2>
+                          </div>
+                          <!--Collapsing filter list-->
+                          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion-download">
+                            <div class="card-body filter-card">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="personCheck1">
+                                <label class="form-check-label" for="personCheck1">
+                                  Ben Duwé
+                                </label>
+                              </div>
+                              <div class="dropdown-divider"></div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="personCheck2">
+                                <label class="form-check-label" for="personCheck2">
+                                  Angel Nedelchev
+                                </label>
+                              </div>
+                              <div class="dropdown-divider"></div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="personCheck3">
+                                <label class="form-check-label" for="personCheck3">
+                                  Jal Yurtsever
+                                </label>
+                              </div>
+                              <div class="dropdown-divider"></div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="personCheck4">
+                                <label class="form-check-label" for="personCheck4">
+                                  Selene Nijst
+                                </label>
+                              </div>
+                              <div class="dropdown-divider"></div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="personCheck5">
+                                <label class="form-check-label" for="personCheck5">
+                                  ...
+                                </label>
+                              </div>
+                              <div class="dropdown-divider"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--End of accordion-->
+                    </div>
+                    <!-- /#sidebar-wrapper -->
+
+                    <!-- Page Content -->
+                    <div class="col-7 col-sm-8 col-md-9 col-xl-10" id="page-content-wrapper">
+
+                      <div class="row border-bottom">
+                        <div class="col-9 order-1 col-sm-2 order-sm-1 my-2 d-flex justify-content-start">
+                          <button class="btn btn-color btn-sm  noradius font-weight-bold" id="menu-toggle">Filter</button>
+                        </div>
+                        <div class="col-12 order-3 col-sm-4 order-sm-2 my-3">
+                          <div class="dropright">
+                            <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Selection
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">All</a></li>
+                              <li><a class="dropdown-item" href="#">None</a></li>
+                              <li>
+                                <div class="dropdown-divider"></div>
+                              </li>
+                              <li><a class="dropdown-item" href="#">Extra option</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-3 order-2 col-sm-6 order-sm-3 d-flex justify-content-end my-2">
+                          <button type="button" class=" noradius btn btn-color btn-sm font-weight-bold">Download</button>
+                        </div>
+                      </div>
+
+                      <div class="row overflow-download download-height">
+                        <div class="col-12">
+                          <h3 class="mt-4">Files:</h3>
+                        </div>
+                        <div class="col-12">
+                          <div class="row border-bottom mb-2 mx-1">
+                            <div class="col-1 ">
+                              <div class="form-check">
+                                <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                              </div>
+                            </div>
+                            <div class="col-10 col-md-3  text-truncate">
+                              CategoryCategoryCategoryCategoryCategoryCategory
+                            </div>
+                            <div class="col-12 col-md-3  text-truncate">
+                              Person Name
+                            </div>
+                            <div class="col-12 col-md-3  text-truncate">
+                              Group
+                            </div>
+                            <div class="col-12 col-md-2  text-truncate">
+                              ...
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row border-bottom mb-2 mx-1">
+                            <div class="col-1 ">
+                              <div class="form-check">
+                                <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                              </div>
+                            </div>
+                            <div class="col-10 col-md-3  text-truncate">
+                              Category
+                            </div>
+                            <div class="col-12 col-md-3  text-truncate">
+                              Person name
+                            </div>
+                            <div class="col-12 col-md-3  text-truncate">
+                              Group
+                            </div>
+                            <div class="col-12 col-md-2  text-truncate">
+                              ...
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="row border-bottom mb-2 mx-1">
+                            <div class="col-1">
+                              <div class="form-check">
+                                <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                              </div>
+                            </div>
+                            <div class="col-10 col-md-3 text-truncate">
+                              Category
+                            </div>
+                            <div class="col-12 col-md-3 text-truncate">
+                              Person name
+                            </div>
+                            <div class="col-12 col-md-3 text-truncate">
+                              Group
+                            </div>
+                            <div class="col-12 col-md-2 text-truncate">
+                              ...
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /#page-content-wrapper -->
+                  </div>
+                  <!-- /#wrapper -->
+                </div>
+              </div>
+
+            </div>
+
+        </div> <!-- "DOWNLOAD" tab content END -->
+
+        <!-- "ADMIN" tab content START (Jal)-->
+        <div class="tab-pane" id="admin1" role="tabpanel" aria-labelledby="admin1-tab">
+
+          <div class="row">
+            <div class="contentcontainer1 col-md-6 col-lg-3 mt-5">
+              <button type="button" class="adminbutton1 btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#newuserpopup1">
+                <div class="adminbtn1 text-center"><div class="fontawe1"><i class="fa fa-user-plus"></i></div>New user</div>
+              </button>
+            </div>
+
+            <div class="contentcontainer1 col-md-6 col-lg-3 mt-5">
+              <button type="button" class="adminbutton1 btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#edituserpopup1">
+                <div class="adminbtn1 text-center"><div class="fontawe1"><i class="fa fa-user-plus"></i></div>Edit user</div>
+              </button>
+            </div>
+
+            <div class="contentcontainer1 col-md-6 col-lg-3 mt-5">
+              <button type="button" class="adminbutton1 btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#settingspopup1">
+                <div class="adminbtn1 text-center"><div class="fontawe1"><i class="fa fa-user-plus"></i></div>Settings</div>
+              </button>
+            </div>
+
+            <div class="contentcontainer1 col-md-6 col-lg-3 mt-5">
+              <button type="button" class="adminbutton1 btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#exampleModal1">
+                <div class="adminbtn1 text-center"><div class="fontawe1"><i class="fa fa-user-plus"></i></div>Other</div>
+              </button>
+            </div>
+
+            <div class="contentcontainer1 col-md-6 col-lg-3 mt-5">
+              <button type="button" class="adminbutton1 btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#exampleModal1">
+                <div class="adminbtn1 text-center"><div class="fontawe1"><i class="fa fa-user-plus"></i></div>Other</div>
+              </button>
+            </div>
+
+            <div class="contentcontainer1 col-md-6 col-lg-3 mt-5">
+              <button type="button" class="adminbutton1 btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#exampleModal1">
+                <div class="adminbtn1 text-center"><div class="fontawe1"><i class="fa fa-user-plus"></i></div>Other</div>
+              </button>
+            </div>
+
+            <div class="contentcontainer1 col-md-6 col-lg-3 mt-5">
+              <button type="button" class="adminbutton1 btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#exampleModal1">
+                <div class="adminbtn1 text-center"><div class="fontawe1"><i class="fa fa-user-plus"></i></div>Other</div>
+              </button>
+            </div>
+
+            <div class="contentcontainer1 col-md-6 col-lg-3 mt-5">
+              <button type="button" class="adminbutton1 btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#exampleModal1">
+                <div class="adminbtn1 text-center"><div class="fontawe1"><i class="fa fa-user-plus"></i></div>Other</div>
+              </button>
+            </div>
+
+            <div class="contentcontainer1 col-md-6 col-lg-3 mt-5">
+              <button type="button" class="adminbutton1 btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#exampleModal1">
+                <div class="adminbtn1 text-center"><div class="fontawe1"><i class="fa fa-user-plus"></i></div>Other</div>
+              </button>
+            </div>
+          </div>
+
+        </div> <!-- "ADMIN" tab content END-->
+
+        <!-- "ADMIN" tab POPUP content START -->
+        <!-- POPUP "NEW USER" START -->
+        <div class="modal" id="newuserpopup1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modaldialog1 modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="popuplabel1">New User</h5>
+                <button type="button" class="btn1 buttonclose1 close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn1 closebutton1 btn btn-secondary font-weight-bold noradius" data-dismiss="modal">Close</button>
+                <button type="button" class="btn1 savechangesbutton1 btn btn-color font-weight-bold noradius">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div> <!-- POPUP "NEW USER" END -->
+
+        <!-- POPUP "EDIT USER" START -->
+        <div class="modal" id="edituserpopup1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modaldialog1 modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="popuplabel1">Edit User</h5>
+                <button type="button" class="btn1 buttonclose1 close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modalfooter1 modal-footer">
+                <button type="button" class="btn1 closebutton1 btn btn-secondary font-weight-bold noradius" data-dismiss="modal">Close</button>
+                <button type="button" class="btn1 savechangesbutton1 btn btn-color font-weight-bold noradius">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div> <!-- POPUP "EDIT USER" END -->
+
+        <!-- POPUP "SETTINGS" START -->
+        <div class="modal" id="settingspopup1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modaldialog1 modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="popuplabel1">Settings</h5>
+                <button type="button" class="btn1 buttonclose1 close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn1 closebutton1 btn btn-secondary font-weight-bold noradius" data-dismiss="modal">Close</button>
+                <button type="button" class="btn1 savechangesbutton1 btn btn-color font-weight-bold noradius">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div> <!-- POPUP "SETTINGS" END-->
+
+        <!-- POPUP "OTHER" (x6) START -->
+        <div class="modal" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modaldialog1 modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="popuplabel1">Other</h5>
+                <button type="button" class="btn1 buttonclose1 close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn1 closebutton1 btn btn-secondary font-weight-bold noradius" data-dismiss="modal">Close</button>
+                <button type="button" class="btn1 savechangesbutton1 btn btn-color font-weight-bold noradius">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div> <!-- POPUP "OTHER" (x6) END-->
+        <!-- "ADMIN" tab POPUP content END-->
+
+      </div> <!-- TABS content END-->
+
+    </div>
+  </div> <!-- PROJECT STORAGE PAGE (4 tabs) END-->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="scriptA.js"></script>
+  <script src="scriptb.js"></script>
+</body>
+
+</html>

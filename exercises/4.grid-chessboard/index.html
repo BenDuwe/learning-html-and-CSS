@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="CSS-exercise"/>
+    <link href="https://fonts.googleapis.com/css?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Grid Chessboard</title>
+</head>
+<body>
+    <div id="perspective">
+        <div class="board" id="board">
+            <div class="top">
+                <span>A</span>
+                <span>B</span>
+                <span>C</span>
+                <span>D</span>
+                <span>E</span>
+                <span>F</span>
+                <span>G</span>
+                <span>H</span>
+            </div>
+            <div class="left">
+                <span>8</span>
+                <span>7</span>
+                <span>6</span>
+                <span>5</span>
+                <span>4</span>
+                <span>3</span>
+                <span>2</span>
+                <span>1</span>
+            </div>
+            <div class="right">
+                <span>8</span>
+                <span>7</span>
+                <span>6</span>
+                <span>5</span>
+                <span>4</span>
+                <span>3</span>
+                <span>2</span>
+                <span>1</span>
+            </div>
+            <div class="bottom">
+                <span>A</span>
+                <span>B</span>
+                <span>C</span>
+                <span>D</span>
+                <span>E</span>
+                <span>F</span>
+                <span>G</span>
+                <span>H</span>
+            </div>
+            <div class="field" id="field">
+                
+                    <span id="rookb1"><img class="rookb"  src="assets/black-rook.png" alt="Black rook"/></span>
+                    <span id="knightb1"><img class="knightb" src="assets/black-knight.png" alt="Black knight"/></span>
+                    <span id="bishopb1"><img class="bishopb" src="assets/black-bishop.png" alt="Black bishop"/></span>
+                    <span id="queenb"><img class="queenb" src="assets/black-queen.png" alt="Black queen"/></span>
+                    <span id="kingb"><img class="kingb" src="assets/black-king.png" alt="Black king"/></span>
+                    <span id="bishopb2"><img class="bishopb" src="assets/black-bishop.png" alt="Black bishop"/></span>
+                    <span id="knightb2"><img class="knightb" src="assets/black-knight.png" alt="Black knight"/></span>
+                    <span id="rookb2"><img class="rookb" src="assets/black-rook.png" alt="Black rook"/></span>
+                    <span id="pawnb1"><img class="pawnb" id="pawnb1" src="assets/black-bishop.png" alt="Black pawn"/></span>
+                    <span id="pawnb2"><img class="pawnb" src="assets/black-bishop.png" alt="Black pawn"/></span>
+                    <span id="pawnb3"><img class="pawnb" id="pawnb3" src="assets/black-bishop.png" alt="Black pawn"/></span>
+                    <span id="pawnb4"><img class="pawnb" id="pawnb4" src="assets/black-bishop.png" alt="Black pawn"/></span>
+                    <span id="pawnb5"><img class="pawnb" src="assets/black-bishop.png" alt="Black pawn"/></span>
+                    <span id="pawnb6"><img class="pawnb" src="assets/black-bishop.png" alt="Black pawn"/></span>
+                    <span id="pawnb7"><img class="pawnb" src="assets/black-bishop.png" alt="Black pawn"/></span>
+                    <span id="pawnb8"><img class="pawnb" src="assets/black-bishop.png" alt="Black pawn"/></span>
+                
+                
+                    <span id="pawnw1"><img class="pawnw" src="assets/white-pawn.png" alt="White pawn"/></span>
+                    <span id="pawnw2"><img class="pawnw" src="assets/white-pawn.png" alt="White pawn"/></span>
+                    <span id="pawnw3"><img class="pawnw" src="assets/white-pawn.png" alt="White pawn"/></span>
+                    <span id="pawnw4"><img class="pawnw" src="assets/white-pawn.png" alt="White pawn"/></span>
+                    <span id="pawnw5"><img class="pawnw" src="assets/white-pawn.png" alt="White pawn"/></span>
+                    <span id="pawnw6"><img class="pawnw" src="assets/white-pawn.png" alt="White pawn"/></span>
+                    <span id="pawnw7"><img class="pawnw" src="assets/white-pawn.png" alt="White pawn"/></span>
+                    <span id="pawnw8"><img class="pawnw" src="assets/white-pawn.png" alt="White pawn"/></span>
+                    <span id="rookw1"><img class="rookw" src="assets/white-rook.png" alt="White rook"/></span>
+                    <span id="knightw1"><img class="knightw" src="assets/white-knight.png" alt="White knight"/></span>
+                    <span id="bishopw1"><img class="bishopw" src="assets/white-bishop.png" alt="White bishop"/></span>
+    <!--Easter egg--><span id="selene"><img class="queenw" src="assets/white-queen.png" alt="White queen"/></span><!--Easter egg-->
+                    <span id="kingw"><img class="kingw" src="assets/white-king.png" alt="White king"/></span>
+                    <span id="bishopw2"><img class="bishopw" src="assets/white-bishop.png" alt="White bishop"/></span>
+                    <span id="knightw2"><img class="knightw" src="assets/white-knight.png" alt="White knight"/></span>
+                    <span id="rookw2"><img class="rookw" src="assets/white-rook.png" alt="White rook"/></span>
+
+            </div>
+        </div>
+    </div>
+    <script src="selenescript.js"></script>
+
+</body>
+</html>

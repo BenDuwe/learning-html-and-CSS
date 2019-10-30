@@ -1,0 +1,175 @@
+.storage1 {
+  margin: 10px;
+}
+
+.btn1:hover {
+  cursor: pointer;
+}
+/*GENERAL MARKUP*/
+.noradius {
+  border-radius: 0;
+}
+
+.btn-color {
+  background-color: rgba(93, 205, 198, 0.26);
+  border-color: rgb(207, 212, 218);
+  color: rgb(37, 53, 68);
+}
+
+.btn-color:hover {
+  background-color: rgba(93, 205, 198, 0.5);
+  border-color: rgb(207, 212, 218);
+  color: rgb(37, 53, 68);
+}
+
+/* TABS MARKUP */
+.tabs1 {
+  background-color: rgba(101, 205, 196, 0.151);
+}
+
+.tablink1 {
+  color: rgb(37, 53, 68);
+  font-weight: bold;
+}
+
+.tablink1:hover {
+  color: rgb(37, 53, 68);
+  background-color: rgba(101, 205, 196, 0.26)
+}
+
+.tabcontent1 {
+  margin-top: 30px;
+}
+
+/* "SEARCH" tab */
+
+.dropdown-menu .form-check:hover{
+  background-color: rgba(91, 204, 196, 0.089);
+}
+
+.dropdown-menu{
+  font-size: 20px;
+}
+
+#search1{
+  height: 82vh;
+}
+
+#autocompleteautocomplete-list{
+  background-color: #fff;
+  border: 1px solid rgba(37, 53, 68, 0.411);
+}
+
+#autocompleteautocomplete-list div{
+  border-bottom: 2px solid rgba(37, 53, 68, 0.212);
+
+}
+#search1 .input-group{
+  margin: auto;
+}
+
+#autocompleteautocomplete-list img{
+  width: 50px;
+  height: 50px;
+}
+
+#autocompleteautocomplete-list {
+  font-size: 25px;
+}
+
+.abc {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* NEW */
+.customfile1 .custom-file-label::after {
+  background-color: rgba(93, 205, 198, 0.26);
+  border-color: rgb(207, 212, 218);
+  color: rgb(37, 53, 68);
+  font-weight: bold;
+  border-radius: 0;
+}
+
+/* "DOWNLOAD" tab */
+.tabc3 {
+  height: auto;
+}
+
+.download-box {
+  overflow-x: hidden;
+}
+
+.download-height {
+  max-height: 70vh;
+}
+
+.overflow-download {
+  overflow-y: auto;
+}
+
+.sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+.card-download {
+  border: none;
+}
+
+.filter-card {
+  padding: 0;
+}
+
+/* "ADMIN" tab */
+.contentcontainer1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.fontawe1 {
+  font-size: 40px;
+  color: rgba(93, 205, 198, 0.26);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon1:hover {
+  cursor: pointer;
+}
+
+.adminbtn1 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.adminbutton1{
+  padding: 0;
+  color: #485057;
+}
+
+.adminbutton1:hover{
+  padding: 0;
+  color: #485057;
+  font-size: 15px;
+}
+
+.adminbutton1:active {
+  padding: 0;
+  color: #485057;
+  font-size: 14px;
+}
+
+/* "ADMIN" tab POPUP SCREEN */
+.modaldialog1 {
+  max-width: 90%;
+  height: auto;
+}

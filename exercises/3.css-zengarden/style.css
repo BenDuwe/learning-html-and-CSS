@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+}
+
+Body, html {
+    height: 100vh;
+    min-height: 1500px;
+}
+
+@font-face {
+    font-family: 'Permanent-marker-Regular';
+    src: url(assets/Permanent_Marker/PermanentMarker-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Architects Daughter';
+    src: url(assets/Architects_Daughter/ArchitectsDaughter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Cabin Sketch';
+    src: url(assets/Cabin_Sketch/CabinSketch-Bold.ttf);
+}
+
+
+.intro a, .supporting a {
+    text-decoration: none;
+    color: rgba(1, 116, 1, 0.795)
+}
+
+.intro a:hover {
+    background-color: rgba(255, 255, 0, 0.274);
+}
+
+.supporting a:hover {
+    background-color: rgba(255, 255, 0, 0.274);
+}
+
+p {
+    font-family: 'Architects Daughter', cursive;
+    color: rgba(66, 66, 68, 0.877);
+    text-align: justify;
+    font-size: 24px;
+}
+
+.intro h3, .supporting h3 {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.supporting h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.page-wrapper{
+    margin-left: 30px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 85% auto;
+    grid-auto-rows: auto auto;
+    grid-template-areas:
+    "header ."
+    "main   .";
+}
+
+aside {
+    padding: 15px;
+    width: 130px;
+    max-width: 130px;
+    position: fixed;
+    top: 15px;
+    right: 10px;
+    overflow-x: hidden;
+    margin: 5px;
+    border: 0.5px solid;
+    border-radius: 25px;
+}
+
+aside h3{
+    font-family: 'Permanent-marker-Regular', cursive;
+    color: rgba(0, 184, 0, 0.274);
+    font-size: 0.9em;
+}
+
+Aside ul {
+    font-size: 0.7em;
+    font-family: 'Architects Daughter', cursive;
+}
+
+aside a{
+    padding: 0 2px 0 2px;
+    border-style: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+aside a:hover{
+    border-style: none solid none solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+section {
+    grid-area: header;
+}
+
+div.main {
+    grid-area: main;
+}
+
+section {
+    margin: 15PX 0 20px 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: auto auto;
+    grid-template-areas:
+    "hd  sum"
+    "pre pre";
+}
+
+section header {
+    grid-area: hd;
+}
+
+section .summary {
+    grid-area: sum;
+}
+
+section .preamble {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: pre;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+header {
+    margin: 5%;
+    transform: rotate(-5deg);
+    background: rgb(255, 242, 227);
+    border: double rgba(206, 0, 0, 0.966);
+    border-radius: 30px /*200px*/;
+    border-width: 15px;
+    box-shadow: -1px 1px rgb(54, 54, 54); 
+    /*border-image: url(assets/hand-draw-sketch-border.png)
+    60 round;*/
+    transition: 1s;
+}
+
+header:hover {
+    transform: rotate(5deg);
+}
+
+header h1 {
+    font-family: 'Permanent-marker-Regular', cursive;
+    color: rgba(255, 0, 179, 0.27);
+    font-size: 4.5em;
+    border-bottom: 2px solid rgba(52, 117, 201, 0.74);
+    margin: 0% 5% 0 5%;
+}
+
+header h2 {
+    font-family: 'Permanent-marker-Regular', cursive;
+    color: rgba(0, 84, 133, 0.27);
+    font-size: 3em;
+    text-align: left;
+    border-bottom: 2px solid rgba(52, 117, 201, 0.74);
+    margin: 0% 5% 2% 5%;
+    padding-top: 3%;
+}
+
+.summary {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transform: rotate(5deg)
+}
+
+.summary p:first-child{
+    margin-bottom: 10px;
+}
+
+abbr:hover {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 40px;
+    border-color: rgb(180, 0, 0);
+}
+
+div.supporting {
+    margin: 15px 0 10% 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 55% auto auto;
+    grid-template-areas:
+    "exp  part  ben"
+    "req  req   req"
+    ".  footer   .";
+}
+
+div.explanation {
+    grid-area: exp;
+    max-width: 100%;
+    padding: 25px;
+    margin: 0px 15px auto 15px;
+    border-left: dashed;
+    border-right:dashed;
+    border-width: 3px;
+    border-radius: 50px;
+    transform: rotate(2deg);
+    transition: 0.7s
+}
+
+div.participation {
+    grid-area: part;
+    padding: 25px;
+    margin: 0px 15px auto 15px;
+    border-left: dashed;
+    border-right:dashed;
+    border-width: 3px;
+    border-radius: 50px;
+    transform: rotate(-2deg);
+    transition: 0.7s;
+}
+
+div.benefits {
+    grid-area: ben;
+    padding: 25px;
+    margin: 0px 15px auto 15px;
+    border-left: dashed;
+    border-right:dashed;
+    border-width: 3px;
+    border-radius: 50px;
+    transition: 0.7s;
+}
+
+#zen-explanation:hover {
+    transform: rotateZ(-2deg);
+}
+
+#zen-participation:hover {
+    transform: rotateZ(2deg);
+}
+
+#zen-benefits:hover {
+    transform: rotateY(-360deg);
+}
+
+div.requirements {
+    grid-area: req;
+    margin-top: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(66, 66, 68, 0.877);
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+footer::after {
+    content: "";
+    background-image: url(assets/hand-background.png);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: bottom right;
+    height: 500px;
+    width: 500px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}

@@ -1,0 +1,891 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+
+
+html > body.bodyPL {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100vw;
+   
+}
+
+header {
+    height: 100px;
+    width: 100vw;
+    background-color: #232D3E;
+    display:flex;
+    align-items: left; /* Vertical center alignment */
+    justify-content: center; /* Horizontal center alignment */
+    flex-flow: column wrap;
+    color: white;
+    border: 1px solid #343B4A;
+}
+
+.marginspanPL {
+    margin-left: 20px;
+}
+
+
+.maingridPL {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /*justify-content: space-between;*/
+    align-items: flex-start;
+    justify-content: left;
+    width: 100vw;
+
+}
+
+.gridinsideflexPL {
+    display: grid;
+    grid-template-columns: 30%;
+    align-items: flex-start;
+    justify-items: left;
+    background-color: #151922;
+    border: 1px solid #343B4A;
+    width: 30vw;
+    height: 100vh;
+    padding-left: 20px;
+    
+grid-template-rows: 95% 5%
+}
+
+.grindinsideflexspacingPL {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+    align-items: flex-start;
+    justify-content: left;
+    color: #9E9FA0;
+    width: 250px;
+    
+    
+}
+
+
+
+
+.gridinsideflex2PL {
+    display: grid;
+    grid-template-columns: 70%;
+    align-items: flex-start;
+    justify-content: left;
+    background-color: #171B23;
+    width: 65vw;
+    height: 90vh;
+    border: 1px solid #343B4A;
+   padding-left: 5vw;
+    /*padding-top: 20px;
+    padding-right:-20px;*/
+}
+
+.grindinsideflexspacingPL > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+
+.highlightsettingsPL {
+    color: white !important;
+    padding-top: 20px;
+   
+}
+
+.spantextcolorPL {
+    color: #9E9FA0;
+}
+
+.colorgeneralPL {
+    color:white;
+    padding-top:20px;
+}
+
+.battlelanguagePL {
+    color: #4C5157;
+    margin-left: 20px;
+}
+
+.selectlanguagePL {
+    margin-left:20px;
+    background-color: #0E1117;
+    border: 1.5px solid #4C5157;
+    color: #9E9FA0;
+    width:155px;
+    height: 25px;
+    background: url(images-patrick/dropdown.png) no-repeat right #0E1117;
+    display: inline-block;
+    position: relative;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1;
+    -webkit-appearance: none;
+    background-position-x: 140px;
+    border-radius: 2px;
+}
+
+.selectlanguage2PL {
+    margin-left:20px;
+    background-color: #0E1117;
+    border: 1.5px solid #4C5157;
+    color: #9E9FA0;
+    width:305px;
+    height: 25px;
+    background: url(images-patrick/dropdown.png) no-repeat right #0E1117;
+    display: inline-block;
+    position: relative;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1;
+    -webkit-appearance: none;
+    background-position-x: 290px;
+    border-radius: 2px;
+    margin-bottom: 18px;
+  
+}
+
+
+.inputboxPL {
+    margin-left: 17px;
+}
+
+
+.regular-checkboxPL {
+	-webkit-appearance: none;
+	background-color: #0B0D11;
+	border: 1.5px solid #34373D;
+	
+	padding: 9px;
+	border-radius: 2px;
+	display: inline-block;
+	position: relative;
+}
+
+.spaninputPL {
+    color: #9E9FA0;
+    font-size: 12px;
+    padding-left: 7px;
+}
+
+.spaninputnonregularPL {
+    color: #4C5157;
+    font-size: 12px;
+    padding-left: 7px;
+}
+
+
+.gridinsideflex2PL > .inputboxPL, .nonregularinputboxPL, .inputboxresetPL, .emailcheckboxPL, .loggedcheckboxPL {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+   
+    
+}
+
+
+.nonregular-checkboxPL {
+	-webkit-appearance: none;
+	background-color: #161A22;
+	border: 1.5px solid #34373D;
+	
+	padding: 9px;
+	border-radius: 2px;
+	display: inline-block;
+	position: relative;
+}
+
+.nonregularinputboxPL {
+    margin-left: 50px;
+}
+
+
+.resetPL {
+    border: 1.5px solid #34373D;
+    background-color: #14171E;
+    color: #0B97FF;
+    border-radius: 2px;
+    width: 200px;
+    height: 35px;
+    
+}
+
+.inputboxresetPL {
+    margin-left: 20px;
+    margin-bottom: 35px;
+}
+
+.emailcheckboxPL {
+    margin-left: 20px;
+}
+
+.regular-checkboxemailPL {
+	-webkit-appearance: none;
+	background-color: #0B0D11;
+	border: 1.5px solid #34373D;
+	
+	padding: 9px;
+	border-radius: 2px;
+	display: inline-block;
+    position: relative;
+    background: url("images-patrick/checkbox4.png") 0 0 no-repeat;
+}
+
+.regular-checkboxemailPL:checked {
+	background-color: #0B0D11;
+	border: 1px solid #34373D;
+    border-radius: 2px;
+    background: url("images-patrick/checkbox4.png") 0 0 no-repeat;
+}
+
+.regular-checkboxemailPL:checked:after {
+
+    background: url("images-patrick/checkbox4.png") 0 0 no-repeat;
+    border: 1px solid #34373D;
+    border-radius: 2px;
+}
+
+.loggedcheckboxPL {
+    margin-left: 50px;
+}
+
+.buttonsPL {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #243040;
+    height: 10vh;
+    width: 60vw;
+    margin: none;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+
+.rotategridPL {
+    display:flex;
+    flex-direction: column;
+    width: 70vw;
+
+}
+
+
+.resettodefaultsPL {
+    border: 1.5px solid #34373D;
+    background-color: #1B2430;
+    color: #0B97FF;
+    border-radius: 2px;
+    width: 200px;
+    height: 35px;
+    font-size: 15px;
+    
+}
+
+
+.donePL {
+    border: 1.5px solid #34373D;
+    background-color: #098CC8;
+    color: white;
+    border-radius: 2px;
+    width: 200px;
+    height: 35px;
+    font-size: 15px;
+    
+}
+
+.link {
+    color: #9E9FA0 !important;
+    text-decoration: none;
+    outline:none;
+}
+
+.link:hover {
+    color: white !important;
+    text-decoration: none;
+}
+
+.link:selected {
+    color: white !important;
+    text-decoration: none;
+}
+
+
+body.body-index {
+    background-image: url(assets/index-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 1300px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(211, 211, 211);
+}
+
+
+.page-wrapper-bd {
+    display: grid;
+    grid-template: 87px 780px/ 240px 1060px;
+}
+
+.topbar-bd {
+    background-color: rgba(65, 65, 65, 0.24);
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.082);
+    display: grid;
+    grid-area: 1 / 1 / 2 / 3;
+    grid-template: 20px 60px / 150px auto auto;
+}
+    .window-icons-bd {
+        font-size: 0.5em;
+        box-sizing: border-box;
+        display: flex;
+        justify-self: flex-end;
+        grid-area: 1 / 3 / 2 / 4;
+        box-sizing: border-box;
+        margin-right: 14px;
+    }
+        .window-icons-bd span {
+            box-sizing: border-box;
+            padding: 5px;
+            color: rgba(211, 211, 211, 0.315) 
+        }
+        .window-icons-bd span:hover {
+            color: white;
+            text-shadow: 0px 0px 15px rgba(255,255,255,1);
+        }
+    .blizzard-menu {
+        color: rgba(0, 174, 255, 0.63);
+        display: flex;
+        justify-self: center;
+        align-content: center;
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    .blizzard-menu span {
+        box-sizing: border-box;
+        padding: 5px;
+        justify-self: center;
+        align-self: center;
+    }
+    .blizzard-menu img {
+        width: 80px;
+    }
+
+    .tabs-bd {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        grid-area: 2 / 2 / 3 / 3;
+        list-style-type: none;
+        text-transform: uppercase;
+    }
+        .tabs-bd a{
+            color: rgba(255, 255, 255, 0.801);
+            box-sizing: border-box;
+            margin-right: 30px;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+        .tabs-bd a.games-index {
+            color: white;
+            text-shadow: 0px 0px 15px rgba(255,255,255,1);
+        }
+        .tabs-bd a:hover, .tabs-bd a:focus {
+            color: white;
+            text-shadow: 0px 0px 15px rgba(255,255,255,1);
+        }
+        .tabs-bd img:hover {
+            box-shadow: 0px 0px 15px rgba(255,255,255,1);
+        }
+    .profile-menu-bd {
+        box-sizing: border-box;
+        margin-right: 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        grid-area: 2 / 3 / 3 / 4;
+    }
+    .profile-menu-bd span {
+        color: rgba(211, 211, 211, 0.651);
+        padding: 7px 12px;
+        border: 0.5px solid rgba(255, 255, 255, 0.171);
+    }
+    .profile-menu-bd span:hover {
+        color: white;
+        text-shadow: 0px 0px 15px rgba(255,255,255,1);
+    }
+    span.profile-picture {
+        position: relative;
+        left: 17px;
+        border: none;
+    }
+    span.profile-picture img {
+        height: 40px;
+    }
+
+    
+    .profile-menu-bd .Rainbow {
+        -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.452);
+        border: none;
+        animation: textAnimate 5s linear infinite alternate;
+        background: linear-gradient( 2deg, #95d7e3, #eb76ff );
+        background-size:600vw 600vw;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 5px 0;
+    }
+    @keyframes textAnimate {
+        from {
+          filter: hue-rotate(0deg);
+          background-position-x: 0%;
+          
+        }
+        to {
+          filter: hue-rotate(360deg);
+          background-position-x: 600vw;
+          
+        }
+      }
+
+.sidebar-bd {
+    grid-area: 2 / 1 / 3 / 2;
+    border-right: 1.5px solid rgba(255, 255, 255, 0.082);
+    display: flex;
+    flex-direction: column;
+}
+    .sidebar-bd img {
+        width: 16%;
+    }
+    .sidebar-bd h2 {
+        box-sizing: border-box;
+        margin-top: 25px;
+        margin-left: 12px;
+        font-size: 0.9em;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    .sidebar-bd li {
+        list-style-type: none;
+        box-sizing: border-box;
+        padding: 6px 6px 6px 18px;
+    }
+    .sidebar-bd li:hover, .sidebar-bd li:focus {
+        background-color: rgba(211, 211, 211, 0.116);
+        border-left: 3px solid #00a3ee;
+    }
+    .sidebar-wow-index{
+        background-color: rgba(211, 211, 211, 0.116);
+        border-left: 3px solid #00a3ee;
+    }
+    span.games-name-index {
+        position: relative;
+        bottom: 10px;
+    }
+
+    .sidebar-bd .back-arrow {
+        box-sizing: border-box;
+        margin-top: 130px;
+        margin-left: 10px;
+        margin-right: 201px;
+        padding: 2px 3px 0px 8px;
+        border-right: 2px solid rgba(255, 255, 255, 0.644);
+        }
+    .sidebar-bd .back-arrow:hover {
+        color: white;
+        text-shadow: 0px 0px 15px rgba(255,255,255,1);
+    }
+
+
+
+.main-bd {
+    margin-left: 45px;
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-rows: 200px 380px 85px 115px;
+    grid-template-columns: auto;
+}
+
+.wow-banner-bd {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-area: 1 / 1 / 2 / 2;
+}
+    div > #azeroth-logo-bd {
+        margin-right: 700px;
+        margin-bottom: 5px;
+        padding-top: 15px;
+        height: 125px;
+    }
+    .main-bd ul {
+        display: flex;
+    }
+    .main-bd li {
+        color: rgba(255, 255, 255, 0.726);
+        box-sizing: border-box;
+        list-style-type: none;
+        padding-right: 30px;
+        padding-bottom: 10px;
+    }
+    a.options-index {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.726);
+    }
+    .main-bd li:hover {
+        color: white;
+        text-shadow: 0px 0px 15px rgba(255,255,255,1);
+    }
+    .options-index > i.fa-cog, .banner-list-bd > i.far {
+        font-size: 0.8em;
+        background: linear-gradient(rgb(31, 154, 255), rgb(0, 60, 109));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+.advertisment-bd {
+    box-sizing: border-box;
+    padding: 5px 0px 80px 0px;
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+}
+    .advertisment-bd > .index-cinematic {
+        background-image: url(assets/index-cinematic.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1.5px solid rgba(255, 255, 255, 0.219);
+        border-radius: 2px;
+        box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.521);
+        display: flex;
+        flex-direction: column;
+        }
+    .index-cinematic > i {
+        font-size: 2.5em;
+        color: rgb(66, 140, 250);
+        box-sizing: border-box;
+        margin-top: 95px;
+        padding: 24px;
+        background-color: rgba(0, 0, 0, 0.589);
+        align-self: center;
+        border-radius: 50%;
+    }
+    .index-cinematic > i:hover {
+        background-color: rgba(133, 133, 133, 0.473);
+    }
+    .index-cinematic > div {
+        box-sizing: border-box;
+        width: 500px;
+        align-self: center;
+        text-transform: uppercase;
+        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.274);
+        font-weight: bold; 
+        background-clip: text;
+        color: rgba(223, 223, 223, 0.842);
+        text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.219);
+    }
+    .index-cinematic > .safehaven {
+        font-size: 3.1em;
+        padding-top: 20px;
+        padding-left: 100px;
+    }
+    .index-cinematic > .cinematic {
+        background-clip: text;
+        color: rgba(255, 255, 255, 0.932);
+        text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.637);
+        font-size: 1.9em;
+        padding-top: 0px;
+        padding-left: 173px;
+        padding-bottom: 5px;
+    }
+    div.index-add img {
+        height: 293px;
+        border: 1.5px solid rgba(255, 255, 255, 0.219);
+        border-radius: 2px;
+        box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.521);
+    }
+    div.micro-holiday {
+        box-sizing: border-box;
+        width: 210px;
+        border: 1.5px solid rgba(255, 255, 255, 0.219);
+        border-radius: 2px;
+        box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.521);
+        overflow: hidden;
+    }
+    div.micro-holiday img {
+        height: 135px;
+    }
+
+    div.micro-holiday-text {
+        padding-left: 15px;
+        padding-bottom: 7px;
+        box-sizing: border-box;
+        background-color: rgba(36, 46, 54, 0.74);
+        background-size: contain;
+    }
+    div.micro-holiday-text h4 {
+        text-align: justify;
+        padding-top: 2px;
+        font-size: 1.3em;
+    }
+    div.micro-holiday-text p {
+        line-height: 1.3em;
+        color: rgba(255, 255, 255, 0.418);
+        overflow: hidden;
+        text-align: justify;
+    }
+
+    div.advertisment-bd div.index-cinematic:hover,
+     div.advertisment-bd div.index-add img:hover, 
+     div.advertisment-bd div.micro-holiday:hover {
+        border: 1.5px solid rgba(250, 179, 26, 0.842);
+        border-radius: 2px;
+        box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.521);
+    }
+
+/*Layout and styling server selection*/
+div.dropdown-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+div.dropdown-index h3 {
+    padding-bottom: 6px;
+    color: rgb(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.8em
+}
+
+/*the container must be positioned relative:*/
+div.custom-dropdown-index {
+    border: 1px solid rgba(211, 211, 211, 0.13);
+    position: relative;
+    font-family: Arial;
+  }
+  
+  div.custom-dropdown-index select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: #000;
+    border-radius: 4px;
+    border: 1px solid rgba(211, 211, 211, 0.13); 
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 22px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-color: #145785 transparent transparent transparent;
+  }
+  
+  .select-selected:before {
+    position: absolute;
+    content: "";
+    top: 7px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-color: transparent transparent #145785 transparent;
+    }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #145785 transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: rgb(30, 144, 255);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+/* layout and styling buttons at the bottom*/
+div.buttons-index {
+    display: flex;
+    flex-direction: row;
+}
+div.buttons-index button {
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid rgba(211, 211, 211, 0.13);
+}
+button.install-button {
+    background-image: linear-gradient(to bottom, #0c97d6 0%, #0686c1 51%, #0077af 100%);
+    color: rgba(255, 255, 255, 0.808);
+    margin: 15px 5px 30px 0px;
+    padding: 6px 77px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+button.subscription-button {
+    background-color: rgba(0, 0, 0, 0.281);
+    margin: 15px 5px 30px 5px;
+    padding: 0px 20px;
+}
+/* end layout and styling buttons at the bottom*/
+
+
+/*buttons hover animation*/
+button.install-button:hover, button.subscription-button:hover {
+    box-shadow: 0px 0px 10px rgba(255,255,255,1);
+    cursor: not-allowed;
+}
+/*end of buttons hover animation*/
+
+div.already-installed {
+    box-sizing: border-box;
+    margin-top: 65px;
+    margin-left: 8px;
+    color: rgba(255, 255, 255, 0.459)
+}
+div.already-installed > a {
+    color: rgba(0, 174, 255, 0.63);
+    text-decoration: none;
+}
+div.already-installed > a:hover {
+    cursor: not-allowed;
+    text-decoration: underline;
+}
+body.news-body {
+    background-image: url("images_thomas/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pagewrapper-news {
+    display: grid;
+    grid-template-rows: 500px 500px 500px;
+    grid-template-columns: 400px 400px 400PX;
+
+
+
+
+}
+
+.topbar-tb {
+    grid-area: 1/1/2/4;
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 500px 500px;
+}
+
+.player {
+    grid-area: 2/2/3/3;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.window-ctrlTB {
+    grid-area: 1/2/2/3;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid lawngreen;
+
+}
+
+.topbaritem {
+   
+    grid-area: 2/1/3/2;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.topbar-2 {
+    grid-area: 1/1/2/3;
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: 100px;
+}
+
+.topmenu-2 {
+    grid-area: 2/1/3/4;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+ul.topmenu-2,ul.topbaritem {
+    list-style-type: unset;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+.page-body {
+    margin: 10px;
+    grid-area: 1/3/2/4;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+   grid-auto-flow: row;
+    
+}
+
+a.games-news {
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+
+.index.png {
+
+    width: 50px;
+    height: 40px;
+
+
+}
+
+.topbaritem {
+    font-size: 10px;
+}

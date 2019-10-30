@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100%;
+    min-width: 445px;
+    min-height: 445px;
+}
+
+body {
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.minefield{
+    display: flex;
+    flex-wrap: wrap;
+    width: 401px;
+    height: 401px;
+    border: 8px;
+    border-style: inset;
+    background-color: lightgray;
+    box-shadow: -10px -10px 10px darkgray;
+    
+}
+
+img {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.discovered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-style: none dotted dotted none;
+    border-width: 2px;
+    border-color: #000;
+}
+
+.hidden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-style: outset;
+    border-width: 3px;
+    color: rgba(0, 0, 0, 0);
+    font-size: 20px;
+}
+
+.one {
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+}
+
+.two {
+    color: rgb(0, 0, 255);
+    font-size: 20px;
+}
+
+.three {
+    color: rgb(0, 150, 0);
+    font-size: 20px;
+}
+
+.h-one:hover {
+    width: 48px;
+    height: 48px;
+    border-style: none dotted dotted none;
+    border-width: 2px;
+    border-color: #000;
+    color: rgba(255, 0, 0, 1);
+    animation-name: red-shift;
+    animation-duration: 1s;
+}
+
+.h-two:hover {
+    width: 48px;
+    height: 48px;
+    border-style: none dotted dotted none;
+    border-width: 2px;
+    border-color: #000;
+    color: rgba(0, 0, 255, 1);
+    animation-name: blue-shift;
+    animation-duration: 1s;
+}
+
+.h-three:hover {
+    width: 48px;
+    height: 48px;
+    border-style: none dotted dotted none;
+    border-width: 2px;
+    border-color: #000;
+    color: rgba(0, 150, 0, 1);
+    animation-name: green-shift;
+    animation-duration: 1s;
+}
+
+
+@keyframes red-shift {
+    from {color: rgba(0, 0, 0, 0);}
+    to {color: rgba(255, 0, 0, 1);}
+}
+
+@keyframes blue-shift {
+    from {color: rgba(0, 0, 0, 0);}
+    to {color: rgba(0, 0, 255, 1);}
+}
+
+@keyframes green-shift {
+    from {color: rgba(0, 0, 0, 0);}
+    to {color: rgba(0, 150, 0, 1);}
+}
+
+.hidden > img {
+    opacity: 0;
+}
+
+.hidden:hover {
+    width: 48px;
+    height: 48px;
+    border-style: none dotted dotted none;
+    border-width: 2px;
+    border-color: #000;
+}
+
+.hidden > img:hover {
+    opacity: 1;
+    animation-name: mine-show;
+    animation-duration: 1s;
+}
+
+@keyframes mine-show {
+    from {opacity: 0;}
+    to { opacity: 1;}
+}

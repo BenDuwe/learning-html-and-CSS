@@ -1,0 +1,299 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* visualizing containers*/
+.main-bg-image {
+    background-color: lightgreen;
+}
+.movies {
+    background-color: lightblue;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.coming-soon {
+    background-color: lightsalmon;
+}
+footer {
+    background-color: lightslategrey;
+}
+/* End visualizing containers*/
+/*Global selectors*/
+.section {
+    width: 85%;
+}
+.jc-c {
+    display: flex;
+    justify-content: center;
+}
+.jc-se {
+    display: flex;
+    justify-content: space-evenly;
+}
+.ac-c {
+    display: flex;
+    align-content: center;
+}
+.ai-c {
+    display: flex;
+    align-items: center;
+}
+.df-col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+a.no-dec {
+    text-decoration: none;
+}
+h2 {
+    font-size: 2em;
+    width: 100%;
+}
+h3 {
+    overflow-wrap: break-word;
+    height: auto;
+    width: 100%;
+}
+/*Header*/
+header {
+    width: 100vw;
+    background-image: linear-gradient(to top, #A35283, #C996B5);
+}
+.header-mask{
+    width: 100%;
+    background-color: rgba(119, 46, 89, 0.658);
+}
+.logo {
+    padding: 15px 2.5vw 5px 2.5vw;
+    width: 100%;
+}
+.logo-size {
+    width: 100%;
+}
+.header-menu {
+    width: 80vw;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.list-item {
+    margin: 5px 3px;
+    padding: 3px;
+    border-radius: 4px;
+    border-style: none solid solid solid;
+    border-color: rgba(255, 255, 255, 0.384);
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.651), transparent)
+}
+/*Content*/
+.main-bg-image {
+    width: 100vw;
+    background-image: linear-gradient(to bottom, #A35283,  #C996B5,  #A35283);
+}
+    /*playing now*/
+    .movies {
+        margin: 10px 0;
+    }
+    .poster {
+        padding-bottom: 20px;
+        margin: 10px 0; 
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        border-bottom: 5px solid rgba(0, 0, 0, 0.493);
+        border-bottom-right-radius: 20px;
+    }
+    .poster-link img {
+        margin-right: 12px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /*Coming soon*/
+    .coming-soon {
+        padding: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-image: url(assets/happy-small.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 120px;
+        border-bottom: 5px solid rgba(0, 0, 0, 0.493);
+        border-bottom-left-radius: 20px;
+
+    }
+    .new-release {
+        width: 100%;
+    }
+    
+
+
+
+ /* extra small */
+ @media only screen and (max-width: 575px) {
+    body {
+      background-color: #F09A9D; /* Red */
+    }
+  }
+  
+  /* small */
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    body {
+      background-color: #F5CF8E; /* Yellow */
+    }
+    .movies {
+        justify-content: space-evenly;
+    }
+    .poster {
+        width: 40%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+    .poster-link {
+        margin: 10px 0px;
+        justify-content: center;
+    }
+    .poster-link img {
+        margin: 0;
+        max-width: 100%;
+        height: auto;
+    }
+  }
+  
+  /* medium */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+      background-color: #B2D6FF; /* Blue */
+    }
+    .header-mask {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header-menu {
+        flex-direction: row;
+        align-content: center;
+    }
+    .logo {
+        width: 100%;
+    }
+    .movies{
+        margin-right: 10px;
+        width: 65vw;
+        max-width: 500px;
+    }
+    .coming-soon {
+        width: 30vw;
+        height: 350px;
+    }
+
+  }
+
+/* large */
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        body {
+            background-color: rgb(187, 255, 178); /* Green */
+        }
+        .header-mask {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .header-menu {
+            width: 80vw;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-content: center;
+        }
+        .logo {
+            width: 59%;
+        }
+        .main-bg-color {
+            margin-right: 20px;
+            background-image: url(assets/Erza-Scarlet.png);
+            background-repeat: no-repeat;
+            background-position: center right;
+        }   
+        .movies{
+            width: 70vw;
+            margin-right: 10px;
+            justify-content: space-evenly;
+        }
+        .poster {
+            width: 40%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: center;
+        }
+    
+        .coming-soon {
+            width: 25vw;
+            height: 350px;
+        }
+    
+    }
+    
+/* extra large */
+    @media only screen and (min-width: 1200px) {
+        body {
+            background-color: rgb(246, 178, 255); /* Pink */
+    }
+    .header-mask {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .header-menu {
+        width: 70vw;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-content: center;
+    }
+    .logo {
+        width: 70%;
+    }
+    .main-bg-color {
+        margin-right: 20px;
+        background-image: url(assets/Erza-Scarlet.png);
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+    .movies {
+        margin-right: 10px;
+        width: 75%;
+        justify-content: space-evenly;
+    }
+
+    .poster {
+        width: 30%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+    .poster-link {
+        margin: 10px 0px;
+        justify-content: center;
+    }
+    .poster-link img {
+        margin: 0;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .coming-soon {
+        width: 20%;
+        height: 350px;
+    }
+
+
+
+}

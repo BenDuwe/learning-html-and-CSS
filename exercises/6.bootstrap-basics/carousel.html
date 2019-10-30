@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>Carousel</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top bg-dark navbar-dark">
+
+            <a class="navbar-brand" href="#">Carousel</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="#" disable>Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main role="main">
+        <div id="topcarousel" class="carousel slide mb-5" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#topcarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#topcarousel" data-slide-to="1"></li>
+                <li data-target="#topcarousel" data-slide-to="2"></li>
+            </ul>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                        <img class="first-slide" src="assets/opticalillusions-phonewallpaper-10-crop.jpg" alt="image"/>
+                            <div class="carousel-caption text-left d-block">
+                                <h1 class="bg-secondary rounded">First Slide</h1>
+                                <p class="bg-secondary rounded">Lorem ipsum dolor sit amet, 
+                                    consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt 
+                                    ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis 
+                                    nostrud exercitation ullamco laboris 
+                                    nisi ut aliquip
+                                </p>
+                                <p>
+                                    <a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a>
+                                </p>
+                            </div>
+                </div>
+                <div class="carousel-item">
+                        <img class="second-slide" src="assets/opticalillusions-phonewallpaper-08-crop.jpg" alt="image"/>
+                            <div class=carousel-caption text-center d-block">
+                                <h1 class="bg-secondary rounded">Second Slide</h1>
+                                <p class="bg-secondary rounded">Lorem ipsum dolor sit amet, 
+                                    consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt 
+                                    ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis 
+                                    nostrud exercitation ullamco laboris 
+                                    nisi ut aliquip
+                                </p>
+                                <p>
+                                    <a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a>
+                                </p>
+                            </div>
+                </div>
+                <div class="carousel-item">
+                        <img class="third-slide" src="assets/opticalillusions-phonewallpaper-05-crop.jpg" alt="image"/>
+                            <div class="carousel-caption text-right d-block">
+                                <h1 class="bg-secondary rounded">Third Slide</h1>
+                                <p class="bg-secondary rounded">Lorem ipsum dolor sit amet, 
+                                    consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt 
+                                    ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis 
+                                    nostrud exercitation ullamco laboris 
+                                    nisi ut aliquip
+                                </p>
+                                <p>
+                                    <a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a>
+                                </p>
+                            </div>
+                </div>
+                <a class="carousel-control-prev" href="#topcarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </a>
+                      <a class="carousel-control-next" href="#topcarousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </a>
+            </div>
+        </div>
+
+        <div class="container main-content">
+            <div class="row mb-5 pb-5">
+                <div class="col-lg-4 text-center mb-4">
+                    <img class="rounded-circle" src="assets/anonymous-glitch.gif" alt="anonymous gif" width="140" height="140">
+                    <h2 class="text-secondary">Heading</h2>
+                    <p class="text-secondary">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                    <p>
+                        <a class="btn btn-secondary" href="#" role="button">View details »</a>
+                    </p>
+                </div>
+                <div class="col-lg-4 text-center mb-4">
+                        <img class="rounded-circle" src="assets/Anonymous_emblem.svg.png" alt="anonymous emblem" width="140" height="140">
+                        <h2 class="text-secondary">Heading</h2>
+                        <p class="text-secondary">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                        <p>
+                            <a class="btn btn-secondary" href="#" role="button">View details »</a>
+                        </p>
+                </div>
+                <div class="col-lg-4 text-center mb-4">
+                        <img class="rounded-circle" src="assets/matrix-code-animation-gif-free-animated-background-716.gif" alt="anonymous gif" width="140" height="140">
+                        <h2 class="text-secondary">Heading</h2>
+                        <p class="text-secondary">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                        <p>
+                            <a class="btn btn-secondary" href="#" role="button">View details »</a>
+                        </p>
+                </div>
+            </div>
+            <hr class="py-4">
+
+                <div class="row mx-3 mb-5">
+                    <div class="col-md-7">
+                        <h2>First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+                        <p class="text-dark">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    </div>
+                    <img class="col-md-5 img-fluid" src="assets/500x500.svg" alt="featurette img">
+                </div>
+                <hr class="py-4">
+                <div class="row mx-3 mb-5">
+                    <div class="col-md-7 order-md-2">
+                        <h2>Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+                        <p class="text-dark">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    </div>
+                    <img class="col-md-5 order-md-1 img-fluid" src="assets/500x500.svg" alt="featurette img">
+                </div>
+                <hr class="py-4">
+                <div class="row mx-3 mb-5">
+                    <div class="col-md-7">
+                        <h2>And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+                        <p class="text-dark">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    </div>
+                    <img class="col-md-5 img-fluid" src="assets/500x500.svg" alt="featurette img">
+                </div>
+                <hr class="py-4">
+
+            <footer class="container">
+                    <div class="row">
+                        <span>© 2017-2018 Company, Inc. · </span>
+                        <a href="#">Privacy</a>
+                        <span> · </span>
+                        <a class="mr-auto"href="#">Terms</a>
+                        <a href="#">Back to top</a>
+                    </div>
+
+            </footer>
+
+        </div>
+    
+
+    </main>
+
+
+
+
+
+
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

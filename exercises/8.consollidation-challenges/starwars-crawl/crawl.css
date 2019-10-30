@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: "Droid Sans", arial, verdana, sans-serif;
+    font-weight: 700;
+    color: #5ebcca;
+    background-color: #000;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    background-image: url(https://www.cssscript.com/demo/create-star-wars-intro-crawl-pure-css/img/stars-bg.jpg);
+}
+
+p#start {
+    text-align: center;
+    font-size: 200%;
+    font-weight: 400;
+    color: #fdfd00;
+    opacity: 0;
+    z-index: 1;
+    -webkit-animation: intro 2s ease-out;
+    animation: intro 2s ease-out;
+}
+
+h1 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    width: 2.6em;
+    left: 50%;
+    top: 3%;
+    font-size: 15em;
+    text-align: center;
+    margin-left: -1.3em;
+    line-height: 0.8em;
+    letter-spacing: -0.05em;
+    color: #000;
+    text-shadow: -2px -2px 0 #5ebcca, 2px -2px 0 #5ebcca, -2px 2px 0 #5ebcca, 2px 2px 0 #5ebcca;
+    opacity: 0;
+    z-index: 1;
+    -webkit-animation: logo 5s ease-in 2.5s;
+    animation: logo 5s ease-in 2.5s;
+}
+h1 img {
+    height: 95%;
+    width: 95%;
+    margin-bottom: 40px;
+}
+h1 sub {
+    width: 1000px;
+    display: block;
+    font-size: 0.3em;
+    letter-spacing: 0;
+    line-height: 0.8em;
+}
+
+div {
+    display: block;
+}
+p > div.episode {
+    margin-bottom: 50px;
+}
+p {
+    margin-bottom: 40px;
+}
+.center {
+    text-align: center;
+}
+
+#titles
+{
+	position: absolute;
+	width: 18em;
+	height: 50em;
+	bottom: 0;
+	left: 50%;
+	margin-left: -9em;
+	font-size: 350%;
+	font-weight: bold;
+	text-align: justify;
+    overflow: hidden;
+    -webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	transform: perspective(300px) rotateX(25deg);
+}
+
+#titles:after
+{
+	position: absolute;
+	content: ' ';
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 5%;
+    background-image: url(/starwars-crawl/fade-mask.png);
+    background-repeat: no-repeat;
+    background-size: initial;
+    overflow: hidden;
+	pointer-events: none;
+}
+
+#titlecontent
+{
+	position: absolute;
+	top: 100%;
+	animation: scroll 120s linear 6s;
+}
+
+@keyframes intro {
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes logo {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.05);
+        opacity: 0;
+    }
+}
+
+@keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
