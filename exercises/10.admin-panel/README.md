@@ -1,6 +1,6 @@
 # admin-panel
 
-https://gertvandormael.github.io/admin-panel/
+https://benduwe.github.io/learning-html-and-CSS/10.admin-panel/
 
 # Challenge: Admin panel
 

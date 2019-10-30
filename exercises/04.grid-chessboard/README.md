@@ -1,7 +1,7 @@
 # Challenge: Grid chessboard
 visual chessboard made using CSS-grid
 
-[Chessboard](https://benduwe.github.io/learning-html-and-css/exercises/grid-chessboard/)
+[Chessboard](https://benduwe.github.io/learning-html-and-css/exercises/04.grid-chessboard/)
 
 
 |Challenge Parameters  |Challenge Details              |

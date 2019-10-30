@@ -2,7 +2,7 @@
 
 ## Link to page:
 
-https://benduwe.github.io/learning-html-and-css/exercises/css-zengarden/
+https://benduwe.github.io/learning-html-and-css/exercises/03.css-zengarden/
 
 
 |Challenge Parameters  |Challenge Details              |

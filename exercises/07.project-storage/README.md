@@ -1,6 +1,6 @@
 # project-storage
 
-[Our project](https://benduwe.github.io/learning-html-and-css/exercises/7.project-storage/)
+[Our project](https://benduwe.github.io/learning-html-and-css/exercises/07.project-storage/)
 
 # Challenge: The basics of Bootstrap
 
