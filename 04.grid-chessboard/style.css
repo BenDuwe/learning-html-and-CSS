@@ -1,122 +1,136 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
-html, body {
-    height: 100vh;
-    Width: 100vw;
+html,
+body {
+  height: 100vh;
+  width: 100vw;
 }
-
 
 @keyframes selection {
-    from { border: 2px solid rgba(255, 0, 0, 0.253);
-        background-color: rgba(208, 255, 0, 0.158);}
-    50% { border: 2px solid rgb(255, 0, 0, 1);
-        background-color: rgba(208, 255, 0, 0.432);}
-    to { border: 2px solid rgba(255, 0, 0, 0.253);
-        background-color: rgba(208, 255, 0, 0.158);}
+  from {
+    border: 2px solid rgba(255, 0, 0, 0.253);
+    background-color: rgba(208, 255, 0, 0.158);
+  }
+  50% {
+    border: 2px solid rgb(255, 0, 0, 1);
+    background-color: rgba(208, 255, 0, 0.432);
+  }
+  to {
+    border: 2px solid rgba(255, 0, 0, 0.253);
+    background-color: rgba(208, 255, 0, 0.158);
+  }
 }
 
 .field span:hover {
-    animation-name: selection;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
+  animation-name: selection;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes pulse {
-    from { transform: scale(1) rotateX(-6deg);}
-    50% { transform: scale(0.85) rotateX(-6deg);}
-    to { transform: scale (1) rotateX(-6deg);}
+  from {
+    transform: scale(1) rotateX(-6deg);
+  }
+  50% {
+    transform: scale(0.85) rotateX(-6deg);
+  }
+  to {
+    transform: scale (1) rotateX(-6deg);
+  }
 }
 
 img {
-    padding: 2px;
-    transform-style: preserve-3d;
-    transform: rotateX(-6deg);
-    height: 40px;
-    justify-self: center;
-    align-self: center;
-    animation-name: unset;
+  padding: 2px;
+  transform-style: preserve-3d;
+  transform: rotateX(-6deg);
+  height: 40px;
+  justify-self: center;
+  align-self: center;
+  animation-name: unset;
 }
 
-.field img:hover, .field img:focus  {
-    animation-name: pulse;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
+.field img:hover,
+.field img:focus {
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(https://previews.123rf.com/images/raver32/raver320810/raver32081000016/3679578-a-picnic-table-perspective-shot-at-the-park.jpg)
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #perspective {
-    perspective: 450px;
+  perspective: 850px;
 }
 
 .board {
-    transform-style: preserve-3d;
-    transform: rotateX(62deg);
-    font-family: 'MedievalSharp', cursive;
-    font-size: 1.5em;
-    font-style: italic;
-    color: rgb(46, 19, 8, 0.7);
-    background-image: url(assets/pexels-photo-129728.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5%;
-    border-width: 3px;
-    border-style: outset;
-    border-color:  rgb(46, 19, 8);
-    display: grid;
-    grid-template-columns: 40px 400px 40px;
-    grid-template-rows: 40px 400px 40px;
-    grid-template-areas:
+  transform-style: preserve-3d;
+  transform: rotateX(35deg);
+  font-family: "MedievalSharp", cursive;
+  font-size: 1.5em;
+  font-style: italic;
+  color: rgb(46, 19, 8, 0.7);
+  background-image: url(assets/pexels-photo-129728.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5%;
+  border-width: 3px;
+  border-style: outset;
+  border-color: rgb(46, 19, 8);
+  display: grid;
+  grid-template-columns: 40px 400px 40px;
+  grid-template-rows: 40px 400px 40px;
+  grid-template-areas:
     ".      top        ."
     "left  field   right"
     ".     bottom      .";
 }
-.top, .bottom {
-    display: grid;
-    grid-template: auto / repeat(8, 1fr);
+.top,
+.bottom {
+  display: grid;
+  grid-template: auto / repeat(8, 1fr);
 }
 
-.left, .right {
-    display: grid;
-    grid-template: repeat(8, 1fr) / auto;
+.left,
+.right {
+  display: grid;
+  grid-template: repeat(8, 1fr) / auto;
 }
 
 .board span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .top {
-    grid-area: top;
+  grid-area: top;
 }
 
 .left {
-    grid-area: left;
+  grid-area: left;
 }
 
 .right {
-    grid-area: right;
+  grid-area: right;
 }
 
 .bottom {
-    grid-area: bottom;
+  grid-area: bottom;
 }
 
 .field {
-    background-image: url(assets/chess-tile.png);
-    background-repeat: repeat;
-    grid-area: field;
-    display:grid;
-    grid-template: repeat(8, 1fr) / repeat(8, 1fr);
-    grid-template-areas:
+  background-image: url(assets/chess-tile.png);
+  background-repeat: repeat;
+  grid-area: field;
+  display: grid;
+  grid-template: repeat(8, 1fr) / repeat(8, 1fr);
+  grid-template-areas:
     "A8 B8 C8 D8 E8 F8 G8 H8"
     "A7 B7 C7 D7 E7 F7 G7 H7"
     "A6 B6 C6 D6 E6 F6 G6 H6"
@@ -125,134 +139,133 @@ body {
     "A3 B3 C3 D3 E3 F3 G3 H3"
     "A2 B2 C2 D2 E2 F2 G2 H2"
     "A1 B1 C1 D1 E1 F1 G1 H1";
-    perspective: 70px;
+  perspective: 70px;
 }
 
-
 #rookb1 {
-    grid-area: A8;
+  grid-area: A8;
 }
 
 #knightb1 {
-    grid-area: B8;
+  grid-area: B8;
 }
 
 #bishopb1 {
-    grid-area: C8;
+  grid-area: C8;
 }
 
 #queenb {
-    grid-area: D8;
+  grid-area: D8;
 }
 
 #kingb {
-    grid-area: E8;
+  grid-area: E8;
 }
 
 #bishopb2 {
-    grid-area: F8;
+  grid-area: F8;
 }
 
 #knightb2 {
-    grid-area: G8;
+  grid-area: G8;
 }
 
 #rookb2 {
-    grid-area: H8;
+  grid-area: H8;
 }
 
 #pawnb1 {
-    grid-area: A7;
+  grid-area: A7;
 }
 
 #pawnb2 {
-    grid-area: B7;
+  grid-area: B7;
 }
 
 #pawnb3 {
-    grid-area: C7;
+  grid-area: C7;
 }
 
 #pawnb4 {
-    grid-area: D7;
+  grid-area: D7;
 }
 
 #pawnb5 {
-    grid-area: E7;
+  grid-area: E7;
 }
 
 #pawnb6 {
-    grid-area: F7;
+  grid-area: F7;
 }
 
 #pawnb7 {
-    grid-area: G7;
+  grid-area: G7;
 }
 
 #pawnb8 {
-    grid-area: H7;
+  grid-area: H7;
 }
 
 #rookw1 {
-    grid-area: A1;
+  grid-area: A1;
 }
 
 #knightw1 {
-    grid-area: B1;
+  grid-area: B1;
 }
 
 #bishopw1 {
-    grid-area: C1;
+  grid-area: C1;
 }
 
 #selene {
-    grid-area: D1;
+  grid-area: D1;
 }
 
 #kingw {
-    grid-area: E1;
+  grid-area: E1;
 }
 
 #bishopw2 {
-    grid-area: F1;
+  grid-area: F1;
 }
 
 #knightw2 {
-    grid-area: G1;
+  grid-area: G1;
 }
 
 #rookw2 {
-    grid-area: H1;
+  grid-area: H1;
 }
 
 #pawnw1 {
-    grid-area: A2;
+  grid-area: A2;
 }
 
 #pawnw2 {
-    grid-area: B2;
+  grid-area: B2;
 }
 
 #pawnw3 {
-    grid-area: C2;
+  grid-area: C2;
 }
 
 #pawnw4 {
-    grid-area: D2;
+  grid-area: D2;
 }
 
 #pawnw5 {
-    grid-area: E2;
+  grid-area: E2;
 }
 
 #pawnw6 {
-    grid-area: F2;
+  grid-area: F2;
 }
 
 #pawnw7 {
-    grid-area: G2;
+  grid-area: G2;
 }
 
 #pawnw8 {
-    grid-area: H2;
+  grid-area: H2;
 }
